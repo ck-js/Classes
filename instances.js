@@ -27,7 +27,7 @@ fruit1.calories *= 2;
 console.log(fruit1);
 
 class Player {
-    constructor() {}
+     constructor() {}
     sayHi() {
         console.log("Hey I play for Chelsea");
     }
@@ -35,5 +35,20 @@ class Player {
 const player1 = new Player();
 player1.sayHi();
 console.log(player1);
+
+class Sport {
+    constructor(name) {
+        this.name = name;
+        this.scoreValue = 0;
+    }
+}
+const sport1 = new Sport("Football");
+const sport2 = new Sport("Cricket");
+
+sport1.scoreValue = 3;
+sport2.scoreValue = 150-2;
+
+console.log(sport1);
+console.log(sport2);
 
 
