@@ -26,3 +26,14 @@ fruit1.calories =  fruit1.calories / 2;
 fruit1.calories *= 2;
 console.log(fruit1);
 
+class Player {
+    constructor() {}
+    sayHi() {
+        console.log("Hey I play for Chelsea");
+    }
+}
+const player1 = new Player();
+player1.sayHi();
+console.log(player1);
+
+
