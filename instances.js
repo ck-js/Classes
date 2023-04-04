@@ -59,3 +59,13 @@ console.log(sport2);
 sport1.score();
 sport2.score();
 
+class Country {
+    constructor() {
+        this.name = "";
+    }
+}
+const country1 = new Country();
+country1.name = "Italy";
+console.log(country1)
+
+
