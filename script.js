@@ -40,3 +40,15 @@ eat(food) {
 const pet1 = new VirtualPet("Tom");
 pet1.eat("Fish");
 pet1.eat("Jerry");
+
+class Inventory {
+    constructor(size) {
+        this.size = size;
+    }
+    increase(unit) {
+        this.size += unit;
+    }
+}
+const shampoo = new Inventory(100);
+shampoo.increase(3);
+console.log(shampoo)
