@@ -24,5 +24,19 @@ this.species = species;
 const animal1 = new Animal("Scooby Doo", "Doggo");
 console.log(animal1)
 
+class VirtualPet {
+constructor(name) {
+    this.name = name;
+}
+eat(food) {
+    if (food === "Jerry") {
+        console.log("Yum Yum");
+    }else {
+        console.log("Discard");
+    }
+    }
 
-
+}
+const pet1 = new VirtualPet("Tom");
+pet1.eat("Fish");
+pet1.eat("Jerry");
