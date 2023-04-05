@@ -53,3 +53,19 @@ const rabbit1 = new Rabbit;
 mammal1.eat("Ant");
 rabbit1.eatVeggies("Chicken");
 
+class  Toothbrush {
+    brush() {
+        console.log("Brush brush");
+    }
+}
+class ElectricToothBrush extends Toothbrush {
+    brush() {
+        super.brush();
+        console.log("Turn off battery");
+    }
+}
+const brush1 = new Toothbrush;
+const brush2 = new ElectricToothBrush;
+
+brush1.brush();
+brush2.brush();
