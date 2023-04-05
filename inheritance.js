@@ -53,9 +53,24 @@ class Employee {
         console.log("Clocking in for " + this.company);
     }
 } 
-class Lawyer extends Employee {};
+class Lawyer extends Employee {
+    work() {
+        console.log("Meeting compliance team");
+    }
+};
+class Headchef extends Employee {
+    work() {
+        console.log("Prepare vegetables");
+    }
+};
+
 const lawyer1 = new Lawyer("Anantara");
+const headChef1 = new Headchef("Spice Spoons");
 console.log(lawyer1);
+console.log(headChef1);
+
 lawyer1.clockIn();
+headChef1.clockIn();
 
-
+lawyer1.work();
+headChef1.work();
